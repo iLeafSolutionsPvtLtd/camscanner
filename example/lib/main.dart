@@ -85,7 +85,7 @@ class _MyAppState extends State<MyApp> {
         child: FutureBuilder(
           future: _getFilterImageWidget(currentFilter, false),
           builder: (context, AsyncSnapshot<Widget> snapShot) {
-            if (snapShot.hasData == true) {
+            if (snapShot.hasData == true && snapShot.connectionState != ConnectionState.waiting) {
               return snapShot.data;
             } else {
               return Center(child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(Colors.white)));
