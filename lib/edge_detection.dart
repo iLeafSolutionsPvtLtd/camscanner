@@ -10,7 +10,8 @@ class EdgeDetection {
     return version;
   }
 
-  static Future<String> get detectEdge async {
+  static Future<String> get
+  detectEdge async {
     final String version = await _channel.invokeMethod('edge_detect');
     return version;
   }
