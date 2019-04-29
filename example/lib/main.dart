@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:image/image.dart' as Img;
 import 'package:path_provider/path_provider.dart';
-import 'package:scan_image/scan_image.dart';
+import 'package:scan_image/edge_detection.dart';
 
 enum Filter {
   Magic,
